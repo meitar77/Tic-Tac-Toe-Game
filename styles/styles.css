@@ -1,0 +1,151 @@
+body {
+  background-color: #F9E4D4;
+  text-align: center;
+}
+
+.flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: strech;
+      -ms-flex-align: strech;
+          align-items: strech;
+}
+
+.flexColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainDiv {
+  background-color: #e6af89;
+  margin: 2%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.generalBorder {
+  border: solid black 3px;
+  border-radius: 10px;
+}
+
+.gameRow {
+  width: 100%;
+  height: 32%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gameSquare {
+  background-color: #F9E4D4;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  width: 32%;
+  height: 100%;
+}
+
+.gameSquare:hover {
+  background-color: white;
+}
+
+.xSquare {
+  background-color: #D67D3E !important;
+}
+
+.cSquare {
+  background-color: #9C0F48 !important;
+}
+
+.menuSection {
+  width: 80%;
+  background-color: #c26a8d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+}
+
+.scoreDisplay {
+  background-color: #f7d3b8;
+  border: solid 2px #470D21;
+  border-radius: 5px;
+  margin: 20px;
+  width: 80%;
+  height: 20px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.button {
+  background-color: #f7d3b8;
+  border: solid 2px #470D21;
+  border-radius: 5px;
+  margin: 10px;
+  width: 80%;
+  height: 20px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: #470D21;
+  color: #F9E4D4;
+}
+
+.button:active {
+  width: 75%;
+  border: solid 2px #F9E4D4;
+}
+
+#mainCanvas {
+  background-color: #F9E4D4;
+  width: 80%;
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+}
+
+#menuDiv {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#blackBG {
+  background-color: #470D21;
+  height: 90%;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

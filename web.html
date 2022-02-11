@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body class="flexRow">
+    <span class="flexColumn mainDiv generalBorder">
+        <div class="menuSection generalBorder">
+            <h2>Score Board</h2>
+            <div id="scoreDisplay">0 / 0</div>
+            <div class="button" onclick="resetScore()">Reset Score</div>
+        </div>
+    </span>
+    <span class="flexColumn mainDiv generalBorder">
+        <h1>Tic Tac Toe</h1>
+        <p>Can you win against the super-tic-tac-toe-2000?</p>
+        <div id="mainCanvas" class="flexColumn generalBorder">
+            <div id="blackBG" class="flexColumn">
+                <div class="flexRow gameRow">
+                    <span class="gameSquare" onClick="getClick(0)"></span>
+                    <span class="gameSquare" onClick="getClick(1)"></span>
+                    <span class="gameSquare" onClick="getClick(2)"></span>
+                </div>
+                <div class="flexRow gameRow">
+                    <span class="gameSquare" onClick="getClick(3)"></span>
+                    <span class="gameSquare" onClick="getClick(4)"></span>
+                    <span class="gameSquare" onClick="getClick(5)"></span>
+                </div>
+                <div class="flexRow gameRow">
+                    <span class="gameSquare" onClick="getClick(6)"></span>
+                    <span class="gameSquare" onClick="getClick(7)"></span>
+                    <span class="gameSquare" onClick="getClick(8)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="button" onClick="resetGame()">New Game</div>
+    </span>
+    <span id="menuDiv" class="flexColumn mainDiv generalBorder">
+        <div class="menuSection generalBorder">
+            <h2>Menu</h2>
+        </div>
+        <div class="flexColumn menuSection generalBorder">
+            <h3>Game Mode</h3>
+            <div class="button" onclick="selectGameMode(0)">Single Player</div>
+            <div class="button" onclick="selectGameMode(1)">Two Players</div>
+        </div>
+    </span>
+    <script src="main.js"></script>
+</body>
+</html>
