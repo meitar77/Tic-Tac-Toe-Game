@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="/favicon.ico?">
+
+</head>
+<body class="flexRow">
+    <span class="flexColumn mainDiv generalBorder">
+        <div class="menuSection generalBorder">
+            <h2>Score Board</h2>
+            <div id="scoreDisplay">0 / 0</div>
+            <div class="button" id="resetScore">Reset Score</div>
+        </div>
+    </span>
+    <span class="flexColumn mainDiv generalBorder">
+        <h1>Tic Tac Toe</h1>
+        <p>Can you win against the super-tic-tac-toe-2000?</p>
+        <div id="mainCanvas" class="flexColumn generalBorder">
+            <div id="blackBG" class="flexColumn">
+                <div class="flexRow gameRow">
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                </div>
+                <div class="flexRow gameRow">
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                </div>
+                <div class="flexRow gameRow">
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                    <span class="gameSquareContainer"><span class="gameSquare"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="button" id="newGame">New Game</div>
+    </span>
+    <span id="menuDiv" class="flexColumn mainDiv generalBorder">
+        <div class="menuSection generalBorder">
+            <h2>Menu</h2>
+        </div>
+        <div class="flexColumn menuSection generalBorder">
+            <h3>Game Mode</h3>
+            <div class="button" id="singleP">Single Player</div>
+            <div class="button" id="doubleP">Two Players</div>
+        </div>
+    </span>
+    <script type="module" src="src/computerLogic.js"></script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
