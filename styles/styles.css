@@ -54,12 +54,27 @@ body {
           justify-content: space-between;
 }
 
+.gameSquareContainer {
+  width: 32%;
+  height: 100%;
+  background-color: #F9E4D4;
+}
+
 .gameSquare {
   background-color: #F9E4D4;
   -webkit-transition: 200ms;
   transition: 200ms;
-  width: 32%;
+  width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 
 .gameSquare:hover {
@@ -67,11 +82,25 @@ body {
 }
 
 .xSquare {
+  -webkit-transition: 200ms;
+  transition: 200ms;
   background-color: #D67D3E !important;
+  -webkit-clip-path: polygon(30% 14%, 50% 30%, 70% 14%, 86% 30%, 70% 50%, 86% 70%, 70% 86%, 50% 70%, 30% 86%, 14% 70%, 30% 50%, 14% 30%) !important;
+          clip-path: polygon(30% 14%, 50% 30%, 70% 14%, 86% 30%, 70% 50%, 86% 70%, 70% 86%, 50% 70%, 30% 86%, 14% 70%, 30% 50%, 14% 30%) !important;
 }
 
 .cSquare {
+  -webkit-transition: 200ms;
+  transition: 200ms;
   background-color: #9C0F48 !important;
+  -webkit-clip-path: circle(38%);
+          clip-path: circle(38%);
+  -webkit-mask-image: radial-gradient(circle farthest-side at center, transparent 26%, white 27%);
+          mask-image: radial-gradient(circle farthest-side at center, transparent 26%, white 27%);
+}
+
+.hidden {
+  z-index: 11;
 }
 
 .menuSection {
@@ -147,5 +176,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 10px;
+}
+
+#scoreDisplay {
+  font-size: 25px;
 }
 /*# sourceMappingURL=styles.css.map */
